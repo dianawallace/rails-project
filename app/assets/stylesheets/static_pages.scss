@@ -1,3 +1,45 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+    margin-top: 50px;
+}
+
+.bike_img {
+   width: 100%;
+}
+
+h1,
+h2,
+h5,
+p {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.social {
+    background-color: #e3e3e3;
+}
+
+.icons li {
+    display: inline;
+    margin: 10px;
+}
+
+.social-icons {
+    text-align: center;
+    padding-right: 15px;
+    font-size: 22px;
+}
+
+.icons {
+    padding-left: 0;
+}
+
+.copy {
+    text-align: center;
+}
+

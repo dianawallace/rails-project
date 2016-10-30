@@ -1,26 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title>Rails Project</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <!-- navbar starts here-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid links anchor" id="process">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+          data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="bike_shop navbar-brand">
+            <a href="#">Bike Shop</a>
+          </div> <!--end projectName -->
+        </div><!--/end navbar-header-->
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right pull-right">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/end nav-->  
+      </div><!-- /container-fluid -->
+    </nav><!--/end navbar --> 
+
+  <%= image_tag("Bikes.jpg", class: "img-responsive bike_img") %>
   
-<nav>
-  <ul>
-    <li>Home</li>
-    <li>About</li>
-    <li>Contact</li>
-  </ul>
-</nav>
-
-<%= yield %>
-
-<footer>
-  &copy; 2015 Bike Berlin
-</footer>
+  <%= yield %>
+  
+  <hr>
+  
+  <footer class="social">
+    <div class="row">
+      <div class="col-xs-12">
+        <h5>Join Us On</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 social-icons">
+        <ul class="icons">
+          <li>
+            <a href="http://https://twitter.com/Dianawallaceart"><i class="fa fa-fw fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="http://https://www.facebook.com/pages/Dianawallaceart/181993221948217"><i class="fa fa-fw fa-facebook-official"></i></a>
+          </li>
+          <li>
+            <a href="http://https://plus.google.com/u/0/117754615514416542940/posts/p/pub"><i class="fa fa-fw fa-google-plus-square"></i></a>
+          </li>
+          <li>
+            <a href="http://https://www.tumblr.com/blog/dianawallaceart"><i class="fa fa-fw fa-tumblr"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="copy">
+          &copy; 2016 Bike Denver<br>
+            <a title="Privacy Policy" href="#">Privacy Policy</a></br>
+            <a title="Terms of Service" href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
