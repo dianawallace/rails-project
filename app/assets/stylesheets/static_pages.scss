@@ -18,6 +18,22 @@ p {
   font-size: 2em;
   font-weight: bold;
   text-align: center;
+  padding: 10px 15px;
+  line-height: 25px;
+}
+
+.carousel-caption {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  top: 0;
+  margin: 0 auto;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
 }
 
 .social {
