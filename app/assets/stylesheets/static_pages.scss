@@ -6,12 +6,9 @@ body {
     margin-top: 50px;
 }
 
-.bike_img {
-   width: 100%;
-}
-
 h1,
 h2,
+h3,
 h5,
 p {
   font-family: Futura, Helvetica, Arial, sans-serif;
@@ -20,6 +17,16 @@ p {
   text-align: center;
   padding: 10px 15px;
   line-height: 25px;
+}
+
+h3 {
+  margin-top: 150px;
+}
+
+h4 {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 100px;
 }
 
 .carousel-caption {
