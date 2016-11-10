@@ -27,15 +27,15 @@
             <span class="icon-bar"></span>
           </button>
           <div class="bike_shop navbar-brand">
-            <a href="https://rails-project-dianawallace.c9users.io/static_pages/index">Bike Shop</a>
+            <%= link_to "bike shop", '/static_pages/landing_page' %> 
           </div> <!--end projectName -->
         </div><!--/end navbar-header-->
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right pull-right">
-            <li><a href="https://rails-project-dianawallace.c9users.io/static_pages/landing_page">Home</a></li>
-            <li><a href="https://rails-project-dianawallace.c9users.io/products">Products</a></li>
-            <li><a href="https://rails-project-dianawallace.c9users.io/static_pages/about">About</a></li>
-            <li><a href="https://rails-project-dianawallace.c9users.io/static_pages/contact">Contact</a></li>
+            <li><%= link_to "home", '/static_pages/index' %> </li>
+            <li><%= link_to "products", '/products' %> </li>
+            <li><%= link_to "about", '/static_pages/about' %> </li>
+            <li><%= link_to "contact", '/static_pages/contact' %> </li>
           </ul>
         </div><!--/end nav-->  
       </div><!-- /container-fluid -->
