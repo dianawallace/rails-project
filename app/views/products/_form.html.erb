@@ -12,8 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <label for="product_name">Name</label><br>
+  <input id="product_name" name="product[name]" type="text" />
   </div>
   <div class="field">
     <%= f.label :description %><br>
@@ -23,8 +23,6 @@
     <%= f.label :image_url %><br>
     <%= f.text_field :image_url %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
   <div class="field">
   <%= f.label :colour %><br>
   <%= f.text_field :colour %>
@@ -33,5 +31,8 @@
   <%= f.label :price %><br>
   <%= f.text_field :price %>
   </div>
+  <div class="actions">
+    <%= f.submit %>
   </div>
+ 
 <% end %>
