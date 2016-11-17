@@ -1,4 +1,4 @@
-class User < ActiveRecord::Base
+class Product < ActiveRecord::Base
   
   has_many :orders
   
