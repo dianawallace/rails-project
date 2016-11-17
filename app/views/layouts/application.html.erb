@@ -15,6 +15,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+    <div>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    </div>
+     
   <!-- navbar starts here-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid links anchor" id="process">
@@ -44,8 +49,8 @@
           </ul>
         </div><!--/end nav-->  
       </div><!-- /container-fluid -->
-    </nav><!--/end navbar --> 
-
+    </nav><!--/end navbar -->
+    
   <%= yield %>
   
   <hr>
