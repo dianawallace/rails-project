@@ -31,10 +31,15 @@ h4 {
 p {
   font-family: 'Alegreya Sans SC', "Courier New", Courier, monospace;
   color: grey;
-  margin: 50px;
+  margin: 25px;
   text-align: center;
   font-size: 10px;
   text-transform: uppercase;
+}
+
+.img-responsive {
+  display: block;
+  margin: auto;
 }
 
 .form {
