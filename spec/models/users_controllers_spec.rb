@@ -12,10 +12,11 @@ describe UsersController, :type => :controller do
       end
       
       it 'loads correct user details' do 
-        get :show, id: user1.id
- 				expect(response).to have_http_status(200)
- 				expect(assigns(:user)).to eq user1
-			end
+        get :show, id: @user.id
+        expect(response).to be_success
+        expect(response).to have_http_status(200)
+        expect(assigns(:user)).to eq @user
+	    end
 			
 			it 'redirects to root_path' do
 			  get :show, id: user2.id
