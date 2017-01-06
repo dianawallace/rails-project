@@ -2,8 +2,8 @@ require 'rails_helper'
 
 describe UsersController, :type => :controller do
 
-  let(:user1) { User.create!(email: 'test@example.com', password: '1234567890') }
-  let(:user2) { User.create!(email: 'test@example.com', password: '1234567890') }
+  let(:user1) { FactoryGirl.create(:user) }
+  let(:user2) { FactoryGirl.create(:user) }
 
   describe 'GET #show' do
      context 'User is logged in' do
@@ -13,10 +13,9 @@ describe UsersController, :type => :controller do
       
       it 'loads correct user details' do 
         get :show, id: @user.id
-        expect(response).to be_success
         expect(response).to have_http_status(200)
         expect(assigns(:user)).to eq @user
-	    end
+	    
 			
 			it 'redirects to root_path' do
 			  get :show, id: user2.id
