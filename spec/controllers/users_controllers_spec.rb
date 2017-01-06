@@ -12,23 +12,23 @@ describe UsersController, :type => :controller do
       end
       
       it 'loads correct user details' do 
-        get :show, id: @user.id
-        expect(response).to have_http_status(200)
-        expect(assigns(:user)).to eq @user
-	    
+              get :show, id: @user1.id
+              expect(response).to have_http_status(200)
+              expect(assigns(:user)).to eq @user
+           end
+   
 			
-			it 'redirects to root_path' do
-			  get :show, id: user2.id
-			  expect(response).to redirect_to(root_path)
-			end
-		end
+	it 'redirects to root_path' do
+	 get :show, id: user2.id
+	 expect(response).to redirect_to(root_path)
+	  end
+  end
 
      context 'No user is logged in' do
        it 'redirects to login' do
          get :show, id: user1.id
          expect(response).to redirect_to(root_path)
-       end
-     end
+      end
+    end
   end
-
-end 
+end

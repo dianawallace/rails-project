@@ -15,4 +15,5 @@ FactoryGirl.define do
     first_name 'Admin'
     last_name 'User'
     password '123456'
+  end
 end
