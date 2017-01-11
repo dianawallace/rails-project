@@ -7,12 +7,11 @@ class ProductsController < ApplicationController
     if params[:q]
       #byebug
       search_term = params[:q]
-      if (Rails.env == "production")
+      if Rails.env.production?
         @products = Product.where("name ilike ?", "%#{search_term}%")
     else
         @products = Product.where("name LIKE ?", "%#{search_term}%").paginate(:page => params[:page], :per_page => 3)
     end  
-      end
     else
       @products = Product.all.paginate(:page => params[:page], :per_page => 3)
     end  
@@ -83,4 +82,5 @@ class ProductsController < ApplicationController
     def product_params
       params.require(:product).permit(:name, :description, :image_url, :colour, :price)
     end
+end
 
