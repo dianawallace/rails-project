@@ -1,0 +1,272 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 10, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+th,
+a {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* line 17, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.form {
+  text-align: center;
+}
+
+/* line 21, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.nav_search {
+  margin-top: 15px;
+  color: gray;
+}
+
+/* line 27, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+th {
+  padding: 15px;
+}
+
+/* line 31, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+td {
+  padding: 0 15px;
+  margin: 50px;
+}
+/* line 1, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 24, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 28, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 40, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 44, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 50, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 58, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 69, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 5, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+body {
+  margin-top: 50px;
+}
+
+/* line 9, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+h1,
+h2,
+h3,
+h5 {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 15px;
+  line-height: 25px;
+}
+
+/* line 21, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+h3 {
+  margin-top: 150px;
+}
+
+/* line 25, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+h4 {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin: 50px 100px;
+}
+
+/* line 31, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+p {
+  font-family: 'Alegreya Sans SC', "Courier New", Courier, monospace;
+  color: grey;
+  margin: 25px;
+  text-align: center;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+/* line 40, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.img-responsive {
+  display: block;
+  margin: auto;
+}
+
+/* line 45, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.form {
+  width: 50%;
+  margin-left: 25%;
+}
+
+/* line 50, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.field,
+.actions,
+body {
+  text-align: center;
+}
+
+/* line 57, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.carousel-caption {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  top: 0;
+  margin: 0 auto;
+}
+
+/* line 67, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.carousel-inner > .item > img {
+  margin: 0 auto;
+}
+
+/* line 73, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.social {
+  background-color: #e3e3e3;
+}
+
+/* line 77, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.icons li {
+  display: inline;
+  margin: 10px;
+}
+
+/* line 82, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.social-icons {
+  text-align: center;
+  padding-right: 15px;
+  font-size: 22px;
+}
+
+/* line 88, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.icons {
+  padding-left: 0;
+}
+
+/* line 92, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.copy {
+  text-align: center;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
