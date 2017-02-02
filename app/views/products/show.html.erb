@@ -13,10 +13,6 @@
       </p>
     </div>
     
-    <%= form_tag "/payments/create" do %>
-          <%= render partial: "shared/stripe_checkout_button" %>
-        <% end %>
-    
     <div class="col-md-12">
       <p>
         <strong>Name:</strong>
@@ -44,6 +40,10 @@
         <%= @product.price %>
       </p>
     </div>
+    
+    <%= form_tag "/payments/create" do %>
+          <%= render partial: "shared/stripe_checkout_button" %>
+        <% end %>
     
     <div class="col-md-12">
       <%= render "products/new_comment" %>
