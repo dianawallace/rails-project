@@ -6,4 +6,16 @@ $(document).on('turbolinks:load', function(){
        return $(this).attr('data-score');
      }
    });
-}); 
+ 
+
+  //jquery Zoom Plugin
+  $('.img-zoom').elevateZoom({
+      zoomType: "lens",
+      lensShape: "round",
+      lensSize: 180,
+      scrollZoom: true,
+      lensFadeIn: 800,
+      lensFadeOut: 800
+   });
+   
+});
