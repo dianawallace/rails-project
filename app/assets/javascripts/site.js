@@ -6,8 +6,9 @@ $(document).on('turbolinks:load', function(){
        return $(this).attr('data-score');
      }
    });
+});
  
-
+$(document).on('turbolinks:load', function(){
   //jquery Zoom Plugin
   $('.img-zoom').elevateZoom({
       zoomType: "lens",
