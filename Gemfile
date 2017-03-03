@@ -62,3 +62,5 @@ gem 'jquery-turbolinks'
 gem 'rails-controller-testing'
 
 gem 'stripe'
+
+gem 'dalli'
