@@ -1,5 +1,5 @@
 class UserMailer < ApplicationMailer
-  default from: "dianawallaceart8@gmail.com"
+  default from: 'your-email@example.com'
 
   def contact_form(email, name, message)
   @message = message
@@ -13,5 +13,13 @@ class UserMailer < ApplicationMailer
   mail( :to => user.email,
         :subject => "Welcome to #{@appname}!")
   end
+  
+  #def paid_success(user, product)
+  #    @user = user
+  #    @product = product
+  #  @appname = "Bike Shop"  
+  #  mail( :to => user.email,
+  #        :subject => "Confirmation of Order and Payment from Bike Denver")
+  # end
   
 end
