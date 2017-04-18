@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe StaticPagesController, :type => :controller do
+describe ProductsController, :type => :controller do
   context 'GET #index' do
     before do
       get :index
